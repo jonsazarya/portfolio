@@ -1,14 +1,16 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Mengabaikan error linting agar tidak menghambat build di Vercel
+  output: "export",
+  basePath: "/portfolio-main",
+  images: {
+    unoptimized: true,
+  },
   eslint: {
     ignoreDuringBuilds: true,
   },
-  // Mengabaikan error TypeScript agar tidak menghambat build di Vercel
   typescript: {
     ignoreBuildErrors: true,
   },
-  // Mematikan source maps untuk menghemat memori saat build
   productionBrowserSourceMaps: false,
 };
 

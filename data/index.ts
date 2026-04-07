@@ -41,7 +41,7 @@ export const gridItems = [
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
     titleClassName: "justify-start",
-    img: "/portfolioi-main/grid.svg",
+    img: "/portfolio-main/grid.svg",
     spareImg: "/portfolio-main/b4.svg",
   },
   {
