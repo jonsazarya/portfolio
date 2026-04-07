@@ -13,7 +13,7 @@ export const gridItems = [
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
-    img: "/portfolio/b1.svg",
+    img: "/portfolio-main/b1.svg",
     spareImg: "",
   },
   {
@@ -41,8 +41,8 @@ export const gridItems = [
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
     titleClassName: "justify-start",
-    img: "/portfolio/grid.svg",
-    spareImg: "/portfolio/b4.svg",
+    img: "/portfolioi-main/grid.svg",
+    spareImg: "/portfolio-main/b4.svg",
   },
   {
     id: 5,
@@ -51,8 +51,8 @@ export const gridItems = [
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
     titleClassName: "justify-center md:justify-start lg:justify-center",
-    img: "/portfolio/b5.svg",
-    spareImg: "/portfolio/grid.svg",
+    img: "/portfolio-main/b5.svg",
+    spareImg: "/portfolio-main/grid.svg",
   },
   {
     id: 6,
