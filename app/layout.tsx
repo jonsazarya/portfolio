@@ -21,7 +21,7 @@ export default function RootLayout({
       <head>
         <link
           rel="icon"
-          href="/portfolio-main/Logo Jones Portfolio.png"
+          href="/portfolio/Logo Jones Portfolio.png"
           sizes="any"
         />
       </head>
