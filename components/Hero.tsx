@@ -51,9 +51,17 @@ const Hero = () => {
            *  change md:text-6xl, add more responsive code
            */}
           <TextGenerateEffect
-            words="Hi! I'm Jones Azarya, a Frontend and Mobile Developer."
+            words="Hi! I'm Jones Azarya, a Frontend and Mobile App Developer."
             className="text-center text-[36px] md:text-5xl lg:text-6xl"
           />
+          {/* GANTI BARIS PARAGRAF INI */}
+          <p
+            className="text-center md:tracking-wider mb-10 text-sm md:text-lg lg:text-xl 
+          bg-gradient-to-br from-blue-100 to-white-200 bg-clip-text text-transparent opacity-80"
+          >
+            I transform complex concepts into seamless user experiences across
+            web and mobile platforms.
+          </p>
           <a href="#about">
             <MagicButton
               title="Show my work"
