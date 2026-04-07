@@ -13,7 +13,7 @@ export const gridItems = [
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
-    img: "/b1.svg",
+    img: "/portfolio/b1.svg",
     spareImg: "",
   },
   {
@@ -41,8 +41,8 @@ export const gridItems = [
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
     titleClassName: "justify-start",
-    img: "/grid.svg",
-    spareImg: "/b4.svg",
+    img: "/portfolio/grid.svg",
+    spareImg: "/portfolio/b4.svg",
   },
   {
     id: 5,
@@ -51,8 +51,8 @@ export const gridItems = [
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
     titleClassName: "justify-center md:justify-start lg:justify-center",
-    img: "/b5.svg",
-    spareImg: "/grid.svg",
+    img: "/portfolio/b5.svg",
+    spareImg: "/portfolio/grid.svg",
   },
   {
     id: 6,
@@ -71,7 +71,7 @@ export const projects = [
     id: 1,
     title: "Portal Magang PT.BTIIG",
     des: "A web-based internship portal that streamlines application, monitoring, and reporting processes for students and administrators.",
-    img: "/p1.png",
+    img: "/portfolio/p1.png",
     iconLists: [
       "/laravel.svg",
       "/vuejs.svg",
