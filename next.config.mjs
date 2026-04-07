@@ -2,40 +2,25 @@ import { withSentryConfig } from "@sentry/nextjs";
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // 1. Tambahkan ini untuk mengabaikan peringatan ESLint (seperti tag <img> tadi)
+  // Mengabaikan error linting agar tidak menghambat build
   eslint: {
     ignoreDuringBuilds: true,
   },
-  // 2. Tambahkan ini untuk mengabaikan error TypeScript jika ada
+  // Mengabaikan error TypeScript
   typescript: {
     ignoreBuildErrors: true,
   },
+  // Mematikan Sentry secara total pada level Next.js
+  sentry: {
+    hideSourceMaps: true,
+    disableServerWebpackPlugin: true,
+    disableClientWebpackPlugin: true,
+  },
 };
 
-export default withSentryConfig(
-  nextConfig,
-  {
-    // Suppresses source map uploading logs during build
-    silent: true,
-    org: "javascript-mastery",
-    project: "javascript-nextjs",
-
-    // TAMBAHKAN INI: Agar tidak error jika Sentry Token tidak ditemukan
-    widenClientFileUpload: true,
-    hideSourceMaps: true,
-    disableLogger: true,
-  },
-  {
-    // Opsi tambahan untuk Sentry
-    widenClientFileUpload: true,
-    transpileClientSDK: true,
-    hideSourceMaps: true,
-    disableLogger: true,
-    automaticVercelMonitors: true,
-
-    // TAMBAHKAN INI: Mematikan paksa upload source maps jika token tidak ada
-    sourcemaps: {
-      disable: true,
-    },
-  },
-);
+// Bungkus config dengan Sentry, tapi paksa agar tidak upload apa pun
+export default withSentryConfig(nextConfig, {
+  silent: true, // Menyembunyikan log error Sentry
+  dryRun: true, // SANGAT PENTING: Melewati tahap upload source maps jika token tidak ada
+  disableLogger: true,
+});
